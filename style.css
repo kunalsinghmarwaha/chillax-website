@@ -1,0 +1,222 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+a {
+    text-decoration: none;
+    color: #fff; /* White links */
+}
+
+h1, h2, h3, p {
+    margin: 10px 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414; /* Slightly lighter black */
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: red; /* Red button */
+}
+
+.sign-in-btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    background-color: #e50914; /* Red button */
+    border: none;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('chillax\ bg.jpeg'); /* Add a hero image for background */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.hero-content form {
+    margin: 20px 0;
+}
+
+.hero-content input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #e50914; /* Red button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscriptions-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #e50914; /* Red button */
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Popular Shows Section */
+.popular-shows {
+    padding: 50px 20px;
+    background-color: #141414;
+    color: #fff;
+}
+
+.popular-shows h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.show-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.show-box {
+    text-align: center;
+}
+
+.show-box img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.show-box p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: #000;
+    text-align: center;
+    color: #808080; /* Gray text */
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+/* FAQ, Terms, Privacy, Help Pages */
+.faq-section, .terms-section, .privacy-section, .help-section, .subscriptions-section {
+    padding: 50px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.faq-section h1, .terms-section h1, .privacy-section h1, .help-section h1, .subscriptions-section h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.faq p, .terms-section p, .privacy-section p, .help-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Subscriptions Section */
+.plans {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.plan {
+    background-color: #141414;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.plan button {
+    padding: 10px 15px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
